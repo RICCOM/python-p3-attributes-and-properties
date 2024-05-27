@@ -22,7 +22,7 @@ class Person:
 
     def get_name(self):
         return self._name
-    
+
     def set_name(self, name):
         if isinstance(name, str) and 1 <= len(name) <= 25:
             self._name = name.title()
@@ -33,7 +33,7 @@ class Person:
 
     def get_job(self):
         return self._job
-    
+
     def set_job(self, job):
         if job in APPROVED_JOBS:
             self._job = job
